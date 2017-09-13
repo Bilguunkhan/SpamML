@@ -5,11 +5,7 @@ from sklearn.naive_bayes import MultinomialNB, GaussianNB, BernoulliNB
 from sklearn.svm import SVC, NuSVC, LinearSVC
 from sklearn.metrics import confusion_matrix
 
-# I have trained two models here namely Naive Bayes classifier and Support Vector Machines (SVM). 
-# Naive Bayes classifier is a conventional and very popular method for document classification problem. 
-# It is a supervised probabilistic classifier based on Bayes theorem assuming independence between every 
-# pair of features. SVMs are supervised binary classifiers which are very effective when you have higher 
-# number of features.
+# Naive Bayes classifier and Support Vector Machines (SVM). 
 
 def make_Dictionary(train_dir):
     emails = [os.path.join(train_dir,f) for f in os.listdir(train_dir)]    
